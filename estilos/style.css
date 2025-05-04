@@ -10,10 +10,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 * {
-    font-family: 'Manrope', sans-serif;
-    padding: 0px;
-    margin: 0px;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 body, html {
@@ -23,29 +23,87 @@ body, html {
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
-
+    align-items: center; /* CENTRALIZA VERTICALMENTE */
     display: flex;
     justify-content: center; /* CENTRALIZA HORIZONTALMENTE */
-    align-items: center; /* CENTRALIZA VERTICALMENTE */
+    height: 100vh;
+    width: 100vw;
 }
 
 section#conteudoprincipal {
     background-color: white;
-    width: 375px;
-    height: 600px;
     border-radius: 20px;
+    height: 600px;
     overflow: hidden; /* TUDO FORA DA BORDA FICA ESCONDIDO */
+    width: 375px;
 }
 
 section#conteudoprincipal > div#imgcomoda {
     background: black url(../imagens/drawers.jpg) no-repeat;
-    height: 265px;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    height: 265px;
 }
 
 section#conteudoprincipal > div#txt {
     padding: 25px;
+}
+
+section#conteudoprincipal > div#txt > h1 {
+    font-size: 1.2em;
+    color: #48556a;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+section#conteudoprincipal > div#txt > p {
+    font-size: 0.8em;
+    color: #6d7f97;
+    line-height: 1.6;
+}
+
+#imgpessoa {
+    background: url(../imagens/avatar-michelle.jpg) no-repeat center center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+#info strong {
+    font-size: 0.9em;
+    color: #48556a;}
+
+#info span {
+    font-size: 0.8em;
+    color: #9eafc2;
+}
+
+#compartilhar {
+    background: url(../imagens/icon-share.svg) no-repeat center center;
+    background-size: 40%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ecf2f8;
+    cursor: pointer;
 }
