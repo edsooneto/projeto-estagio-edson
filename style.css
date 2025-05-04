@@ -1,0 +1,148 @@
+/* ========================
+   ARQUIVO: estilos/style.css
+   ======================== */
+
+   @charset "UTF-8";
+
+   /* Fonte Manrope */
+   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+   
+   /* Reset básico e fonte padrão */
+   * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Manrope', sans-serif;
+   }
+   
+   body {
+     background-color: hsl(210, 46%, 95%);
+     font-size: 13px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     padding: 20px;
+   }
+   
+   main.cartao {
+     background-color: #fff;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     max-width: 375px;
+     width: 100%;
+   }
+   
+   .cartao__imagem img {
+     width: 100%;
+     height: auto;
+     display: block;
+   }
+   
+   .cartao__conteudo {
+     padding: 20px;
+   }
+   
+   .cartao__titulo {
+     color: hsl(217, 19%, 35%);
+     font-weight: 700;
+     font-size: 16px;
+     margin-bottom: 10px;
+   }
+   
+   .cartao__descricao {
+     color: hsl(214, 17%, 51%);
+     font-weight: 500;
+     line-height: 1.5;
+   }
+   
+   .cartao__rodape {
+     margin-top: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: relative;
+   }
+   
+   .usuario {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+   }
+   
+   .usuario img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+   }
+   
+   .usuario__info {
+     display: flex;
+     flex-direction: column;
+     font-style: normal;
+   }
+   
+   .usuario__info strong {
+     color: hsl(217, 19%, 35%);
+     font-weight: 700;
+   }
+   
+   .usuario__info span {
+     color: hsl(212, 23%, 69%);
+     font-size: 12px;
+   }
+   
+   .compartilhar {
+     position: relative;
+   }
+   
+   .compartilhar button {
+     background-color: hsl(210, 46%, 95%);
+     border: none;
+     border-radius: 50%;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     transition: background 0.3s;
+   }
+   
+   .compartilhar button:hover {
+     background-color: hsl(212, 23%, 69%);
+   }
+   
+   .compartilhar__opcoes {
+     position: absolute;
+     bottom: 120%;
+     right: 0;
+     background-color: hsl(217, 19%, 35%);
+     padding: 10px 15px;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     color: white;
+     font-size: 12px;
+     z-index: 10;
+   }
+   
+   .compartilhar__opcoes span {
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     color: hsl(212, 23%, 69%);
+   }
+   
+   .compartilhar__opcoes a img {
+     width: 16px;
+     height: 16px;
+     filter: brightness(0) invert(1);
+   }
+   
+   /* Esconde por padrão o menu de compartilhamento */
+   .escondido {
+     display: none;
+   }
+   

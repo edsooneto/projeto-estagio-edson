@@ -1,54 +1,51 @@
 @charset "UTF-8";
 
-/*
-    Paleta de cores
-    Very Dark Grayish Blue: hsl(217, 19%, 35%)
-    Desaturated Dark Blue:  hsl(214, 17%, 51%)
-    Grayish Blue:           hsl(212, 23%, 69%)
-    Light Grayish Blue:     hsl(210, 46%, 95%)
-
+/*  PALETA DE CORES
+    Very Dark Grayish Blue: hsl(217, 19%, 35%)  #48556a
+    Desaturated Dark Blue: hsl(214, 17%, 51%)   #6d7f97
+    Grayish Blue: hsl(212, 23%, 69%)            #9eafc2
+    Light Grayish Blue: hsl(210, 46%, 95%)      #ecf2f8
 */
 
-/* Fonte Manrope */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 * {
-    box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 body, html {
-    background: hsl(210, 46%, 95%);
+    background-color: #ecf2f8;
     height: 100vh;
     width: 100vw;
 }
 
 main {
-    position: relative;
     height: 100vh;
     width: 100vw;
+
+    display: flex;
+    justify-content: center; /* CENTRALIZA HORIZONTALMENTE */
+    align-items: center; /* CENTRALIZA VERTICALMENTE */
 }
 
-section#conteudo {
+section#conteudoprincipal {
     background-color: white;
+    width: 375px;
+    height: 600px;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.050);
-    width: 250px;
-    height: 500px;
-    overflow: hidden; /* Tudo que estiver fora da borda vai ficar escondido */
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    overflow: hidden; /* TUDO FORA DA BORDA FICA ESCONDIDO */
 }
 
-section#conteudo > div#imagem {
-    background: hsl(210, 46%, 95%) url(../imagens/drawers.jpg) no-repeat;
-    background-position: center center;
+section#conteudoprincipal > div#imgcomoda {
+    background: black url(../imagens/drawers.jpg) no-repeat;
+    height: 265px;
     background-size: cover;
-    height: 200px;
+    background-position: center center;
 }
 
+section#conteudoprincipal > div#txt {
+    padding: 25px;
+}
