@@ -11,13 +11,54 @@
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    main section#conteudoprincipal { /* DESSA FORMA É MAIS ESPECÍFICO DO QUE UTILIZAR SOMENTE #CONTEUDOPRINCIPAL */
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+    }
 
+    #imgcomoda {
+        height: auto;
+        width: 100vw;
+        background-position: left;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    
+    main section#conteudoprincipal {
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+    }
+
+    #imgcomoda {
+        height: auto;
+        width: 65%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    main section#conteudoprincipal {
+        flex-direction: row;
+        width: 70%;
+        height: 350px;
+    }
+
+    #imgcomoda {
+        height: 450px;
+        width: 90%;
+        background-position: left;
+    }
+
+    #txt {
+        padding: 50px;
+    }
     
+    #txt > h1 {
+        font-size: 1.5em;
+    }
+    
+    #txt > p {
+        font-size: 1.2em;
+    }
 }
