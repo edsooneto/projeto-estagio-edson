@@ -33,23 +33,25 @@ main {
 section#conteudoprincipal {
     background-color: white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     height: 540px;
     overflow: hidden; /* TUDO FORA DA BORDA FICA ESCONDIDO */
     width: 360px;
 }
 
-section#conteudoprincipal > div#imgcomoda {
+#imgcomoda {
     background: black url(../imagens/drawers.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     height: 200px;
 }
 
-section#conteudoprincipal > div#txt {
+#txt {
     padding: 25px;
 }
 
-section#conteudoprincipal > div#txt > h1 {
+#txt > h1 {
     font-size: 1.2em;
     color: #48556a;
     line-height: 1.5;
@@ -57,7 +59,7 @@ section#conteudoprincipal > div#txt > h1 {
     font-weight: 700;
 }
 
-section#conteudoprincipal > div#txt > p {
+#txt > p {
     font-size: 1em;
     color: #6d7f97;
     line-height: 1.6;
