@@ -16,10 +16,8 @@
     padding: 0px;
 }
 
-body, html {
+body {
     background-color: #ecf2f8;
-    height: 100vh;
-    width: 100vw;
 }
 
 main {
@@ -30,7 +28,7 @@ main {
     width: 100vw;
 }
 
-section#conteudoprincipal {
+#conteudoprincipal {
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -41,8 +39,7 @@ section#conteudoprincipal {
 }
 
 #imgcomoda {
-    background: black url(../imagens/drawers.jpg) no-repeat;
-    background-position: center center;
+    background: black url(../imagens/drawers.jpg) no-repeat center center;
     background-size: cover;
     height: 200px;
 }
@@ -51,15 +48,14 @@ section#conteudoprincipal {
     padding: 25px;
 }
 
-#txt > h1 {
+#txt h1 {
     font-size: 1.2em;
     color: #48556a;
     line-height: 1.5;
     margin-bottom: 15px;
-    font-weight: 700;
 }
 
-#txt > p {
+#txt p {
     font-size: 1em;
     color: #6d7f97;
     line-height: 1.6;
