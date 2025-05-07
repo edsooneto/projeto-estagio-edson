@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #ecf2f8;
+    background-color: black /* #ecf2f8 */;
 }
 
 main {
@@ -28,90 +28,89 @@ main {
     width: 100vw;
 }
 
-#conteudoprincipal {
+.conteudoprincipal {
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    height: 540px;
     overflow: hidden; /* TUDO FORA DA BORDA FICA ESCONDIDO */
     width: 360px;
 }
 
-#imgcomoda {
-    background: black url(../imagens/drawers.jpg) no-repeat center center;
+.imgcomoda {
+    background: black url(../imagens/drawers.jpg);
     background-size: cover;
-    height: 200px;
+    height: 230px;
 }
 
-#txt {
-    padding: 25px;
+.txt {
+    padding: 30px;
+    position: relative;
 }
 
-#txt h1 {
-    font-size: 1.2em;
+.txt h1 {
+    font-size: 1.1em;
     color: #48556a;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
-#txt p {
-    font-size: 1em;
+.txt p {
+    font-size: 0.8em;
     color: #6d7f97;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
-#imgpessoa {
-    background: url(../imagens/avatar-michelle.jpg) no-repeat center center;
+.imgpessoa {
+    background: url(../imagens/avatar-michelle.jpg);
     background-size: cover;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-#rodape {
+.rodape {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
 }
 
-#perfil {
+.perfil {
     display: flex;
-    align-items: center;
     gap: 15px;
 }
 
-#info {
+.info {
     display: flex;
     flex-direction: column;
 }
 
-#info strong {
+.info strong {
     font-size: 0.9em;
     color: #48556a;}
 
-#info span {
-    font-size: 0.8em;
+.info span {
+    font-size: 0.9em;
     color: #9eafc2;
 }
 
-#compartilhar {
+.botaocompartilhar {
     background: url(../imagens/icon-share.svg) no-repeat center center;
     background-size: 50%;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #ecf2f8;
     cursor: pointer;
 }
 
-#social {
+.social-bar {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #48556a;
     display: flex;
     align-items: center;
@@ -119,42 +118,27 @@ main {
     padding: 0 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: all 0.3s ease;
-    z-index: 1;
 }
 
-#social span {
+.social-bar span {
     color: #9eafc2;
     letter-spacing: 5px;
     font-size: 0.8em;
 }
 
-#social img {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-#fechar {
+.botaofechar {
     background: url(../imagens/icon-share.svg) no-repeat center center;
     background-size: 50%;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     background-color: #9eafc2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 
-#fechar img {
+.botaofechar img {
     width: 18px;
     height: 18px;
-}
-
-#social {
-    position: relative;
 }
 
 .escondido {

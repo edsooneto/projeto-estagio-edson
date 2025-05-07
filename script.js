@@ -1,7 +1,7 @@
-let botaocompartilhar = document.getElementById('compartilhar')
-let social = document.getElementById('social')
-let perfil = document.getElementById('perfil')
-let botaofechar = document.getElementById('fechar')
+let botaocompartilhar = document.querySelector('.botaocompartilhar')
+let social = document.querySelector('#social')
+let perfil = document.querySelector('.perfil')
+let botaofechar = document.querySelector('.botaofechar')
 
 botaocompartilhar.addEventListener('click', () => {
     perfil.style.display = 'none';
